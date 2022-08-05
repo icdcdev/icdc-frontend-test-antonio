@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Subjects extends CI_Controller {
     public function index()
     {
-        $this->load_views("login/login_view");
+        $this->load_views("subject/subject_view");
     }
 
     private function load_views($main)
@@ -16,8 +16,5 @@ class Login extends CI_Controller {
             'footer' => $this->load->view('templates/footer_view', $data, TRUE)
         );
         $this->load->view('layout_general_view', $data);
-    }
-    public function access(){
-
     }
 }
