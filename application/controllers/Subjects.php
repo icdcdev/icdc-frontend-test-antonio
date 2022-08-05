@@ -17,4 +17,9 @@ class Subjects extends CI_Controller {
         );
         $this->load->view('layout_general_view', $data);
     }
+
+    public function add_subject()
+    {
+        $this->load_views("subject/subject_view");
+    }
 }
